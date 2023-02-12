@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* Assignment 1 | COMP1073 Client-Side JavaScript */
+
+body {
+    background-color: yellow;
+}
+
+header h1 {
+    text-align: center;
+    font-family: cursive;
+    color: red;
+}
+
+section:first-of-type h2 {
+    text-align: center;
+}
+
+/* Layout */
+
+/* displaying both sections side-by-side */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section:nth-child(1) {
+    flex: 3;
+    margin-top: 10px;
+}
+
+main section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.story-buttons-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.story-buttons-container button {
+    margin: 10px 0;
+}
+
+/* Buttons  */
+
+button {
+    /* Set the cursor to pointer for all the buttons */
+    cursor: pointer;
+    border: none;
+    margin: 1px 25px;
+}
+
+/* hover effect for all the buttons */
+button:hover {
+    background-color: rgb(0, 255, 153);
+}
+
+
+/* Styling each button */
+#noun1 {
+    padding: 20px 10px;
+    border-radius: 50%;
+}
+
+#verb {
+    padding: 20px 20px;
+    border-radius: 50%;
+}
+
+#adjective {
+    padding: 20px;
+    border-radius: 50%;
+}
+
+#noun2 {
+    padding: 20px 10px;
+    border-radius: 50%;
+}
+
+#setting {
+    padding: 20px 10px;
+    border-radius: 50%;
+}
+
+#playback {
+    padding: 10px;
+    border-radius: 10%;
+}
+
+#random {
+    padding: 10px;
+    border-radius: 10%;
+}
+
+#reset {
+    padding: 10px;
+    border-radius: 10%;
+}
+
+/* Centering the buttons */
+.words-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.word-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* Words */
+
+/* Centering the words */
+.words-container div {
+    margin: 1px 31px;
+    text-align: center;
+}
+
+/* Styling the words */
+.words-container div p {
+    margin: 25px 0;
+    padding: 10px;
+    border-radius: 7px;
+    color: white;  
+}
+
+/* Setting background color for each column */
+.words-container div:nth-child(1) p {
+    background-color: blueviolet;
+}
+
+.words-container div:nth-child(2) p {
+    background-color: aqua;
+    color: black;
+}
+
+.words-container div:nth-child(3) p {
+    background-color: rgb(0, 197, 0);
+}
+
+.words-container div:nth-child(4) p {
+    background-color: orange;
+}
+
+.words-container div:nth-child(5) p {
+    background-color: rgb(255, 142, 160);
+}
+
+/* The active word will have a border when the user cycles through the words */
+.active {
+    outline: 4px solid rgb(255, 0, 0);
+}
+
+
+/* Story output*/
+aside {
+    margin-top: 20px;
+    text-align: center;
+}
+
+aside p {
+    font-size: 1.5rem;
+    border: 3px solid orange;
+    padding: 7px;
+    font-family: monospace;
+}
