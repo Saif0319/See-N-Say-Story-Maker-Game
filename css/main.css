@@ -46,6 +46,8 @@ main section:nth-child(2) {
     margin: 10px 0;
 }
 
+
+
 /* Buttons  */
 
 button {
@@ -55,36 +57,59 @@ button {
     margin: 1px 25px;
 }
 
-/* hover effect for all the buttons */
-button:hover {
+/* hover effect for the side buttons */
+main section:nth-child(2) button:hover {
     background-color: rgb(0, 255, 153);
 }
 
 
+
+
+/* Giving the word buttons a border-radius of 50% and a transition */
+main section:nth-child(1) button {
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+}
+
 /* Styling each button */
 #noun1 {
     padding: 20px 10px;
-    border-radius: 50%;
+}
+
+#noun1:active {
+    background-color: blueviolet;
 }
 
 #verb {
     padding: 20px 20px;
-    border-radius: 50%;
+}
+
+#verb:active {
+    background-color: aqua;
 }
 
 #adjective {
     padding: 20px;
-    border-radius: 50%;
+}
+
+#adjective:active {
+    background-color: rgb(0, 197, 0);
 }
 
 #noun2 {
     padding: 20px 10px;
-    border-radius: 50%;
+}
+
+#noun2:active {
+    background-color: orange;
 }
 
 #setting {
     padding: 20px 10px;
-    border-radius: 50%;
+}
+
+#setting:active {
+    background-color: rgb(255, 142, 160);
 }
 
 #playback {
@@ -161,6 +186,7 @@ button:hover {
 .active {
     outline: 4px solid rgb(255, 0, 0);
 }
+
 
 
 /* Story output*/
